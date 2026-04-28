@@ -10,7 +10,7 @@ This project operates in the healthcare analytics domain with a focus on oncolog
 - **Name:** Anaya Nath  
 - **NetID:** dtv9vd 
 - **DOI:** [10.5281/zenodo.19865590](https://doi.org/10.5281/zenodo.19865590)
-- **License:** 
+- **License:** https://github.com/Anaya666/oncology_dp2/blob/main/docs/LICENSE
 
 
 **Links:**
