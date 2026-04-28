@@ -28,10 +28,10 @@ Understanding what drives differences in healthcare resource utilisation among c
 Identify which clinical features (demographics, vitals, lab results, and encounter history) most strongly contribute to high vs low healthcare resource utilization among cancer patients. 
 
 ### Rationale
-Cancer patients exhibit highly variable healthcare needs due to differences in disease severity, comorbid conditions, and physiological responses, making it important to move beyond a general prediction of risk toward understanding which specific clinical factors drive healthcare resource utilization. Refining the problem enables not only classification of high versus low utilization patients, but also interpretable insights into the most influential features, supporting more informed clinical decision-making and resource planning in oncology care.
+Cancer patients exhibit highly variable healthcare needs due to differences in disease severity, comorbid conditions, and physiological responses, making it important to move beyond a general classification of high versus low resource utilisation by patients toward understanding which specific clinical factors drive healthcare resource utilization. This provides interpretable insights into the most influential features, supporting more informed clinical decision-making and resource planning in oncology care.
 
 ### Motivation
-My motivation for this project comes from a personal experience—my mother was diagnosed with stage 1 breast cancer a few years ago and spent a significant amount of time in and out of the hospital, continuing with regular follow-up check-ups even after initial treatment. Seeing how much clinical data, monitoring, and ongoing care is involved for a single patient made me realize how complex and resource-intensive cancer care can be at the individual level. This led me to explore how hospitals can better understand and anticipate resource utilization across patients using data, with the goal of improving care planning and ensuring resources are allocated where they can have the greatest impact.
+My motivation for this project comes from a personal experience: a family member was diagnosed with stage 1 breast cancer a few years ago and spent a significant amount of time in and out of the hospital, continuing with regular follow-up check-ups even after initial treatment. Seeing how much clinical data, monitoring, and ongoing care is involved for a single patient made me realize how complex and resource-intensive cancer care can be at the individual level. This led me to explore how hospitals can better understand and anticipate resource utilization across patients using data, with the goal of improving care planning and ensuring resources are allocated where they can have the greatest impact.
 
 ---
 
@@ -122,13 +122,9 @@ Several critical decisions were made during the data creation process that invol
 ## Metadata
 
 ### Implicit Schema
-Since MongoDB does not enforce a strict schema, the following guidelines define
-the expected document structure for the `longitudinal_oncology` database. All
-documents across the female, male, and assorted collections share a common base
-structure inherited from the FHIR standard, with additional fields varying by
-`resourceType`.
+Since MongoDB does not enforce a strict schema, the following guidelines define the expected document structure for the `longitudinal_oncology` database. All documents across the female, male, and assorted collections share a common base structure inherited from the FHIR standard, with additional fields varying by `resourceType`.
 
-Guidelines for ALL Documents
+Guidelines for ALL Documents:
 All documents regardless of `resourceType` must follow these guidelines:
 
 
@@ -322,6 +318,7 @@ those patients
 | `medicationCodeableConcept` | Object | RxNorm coded medication name and dosage | `{"text": "Penicillin G 375 MG/ML Injectable Solution"}` |
 | `authoredOn` | String | Timestamp when request was authored | `"1958-09-17T20:28:23-04:00"` |
 | `requester` | Object | Provider who requested the medication | `{"display": "Dr. Billie243 Ferry570"}` |
+
 ### Uncertainty Quantification
 All statistics are computed from the `female` collection across all
 `Observation` documents with a `valueQuantity.value` field. Standard deviation
