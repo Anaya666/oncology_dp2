@@ -1,4 +1,4 @@
-# DS 4320 Project 1: Data Insights into Wine Club Subscription Performance
+# DS 4320 Project 1: Predicting Healthcare Utilization in Cancer Patients
 
 ## Executive Summary
 This project operates in the healthcare analytics domain with a focus on oncology and clinical data modeling using a document-based MongoDB architecture. Leveraging longitudinal synthetic cancer patient records from the mCODE Synthea dataset, the project integrates complex, nested healthcare data—including patient demographics, clinical observations, lab results, and encounter histories—into a unified analytical pipeline. The primary objective is to identify patterns in patient health trajectories and develop a predictive model that classifies patients into high and low healthcare resource utilisation categories, serving as a proxy for disease burden and clinical resource intensity.
@@ -354,4 +354,4 @@ indicates greater variability and uncertainty in that feature.
 ---
 
 ## Press Release
-https://github.com/Anaya666/design22--project1/blob/main/docs/press_release.md
+https://github.com/Anaya666/oncology_dp2/blob/main/docs/press_release.md
