@@ -16,7 +16,7 @@ This project operates in the healthcare analytics domain with a focus on oncolog
 **Links:**
 - Press Release: https://github.com/Anaya666/oncology_dp2/blob/main/docs/press_release.md  
 - Data: https://confluence.hl7.org/spaces/COD/pages/80119851/mCODE+Test+Data 
-- Pipeline: https://github.com/Anaya666/oncology_dp2/tree/main/analysis  
+- Pipeline: https://github.com/Anaya666/oncology_dp2/tree/main/analysis/solution_pipeline.ipynb  
 ---
 
 ## Problem Definition
@@ -36,6 +36,8 @@ My motivation for this project comes from a personal experience: a family member
 ---
 
 ## Domain Exposition
+This project operates in the domain of clinical informatics and oncology, where  large volumes of patient health records are used to understand disease progression, treatment patterns, and healthcare resource consumption. Cancer care is among the  most data-intensive areas of medicine: a single patient can generate thousands of clinical records spanning lab results, medications, procedures, and encounters over the course of their treatment. The emergence of standardized healthcare data formats such as FHIR (Fast Healthcare Interoperability Resources) and domain-specific standards like mCODE (Minimal Common Oncology Data Elements) has made it possible to structure and analyze this data at scale. Document databases such as MongoDB are particularly well-suited for this domain because healthcare records are inherently nested, variable in structure, and patient-centric:  properties that align naturally with the document model. By combining clinical data engineering with machine learning,  this project sits at the intersection of health informatics, data science, and oncology research, with the practical goal of identifying which patients are most 
+likely to require intensive healthcare resources.
 
 ### Key Metrics and Jargon
 
