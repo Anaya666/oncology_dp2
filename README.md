@@ -7,10 +7,10 @@ This project operates in the healthcare analytics domain with a focus on oncolog
 
 ## Project Information
 
-**Name:** Anaya Nath  
-**NetID:** dtv9vd 
-**DOI:** pending
-**License:** pending
+- **Name:** Anaya Nath  
+- **NetID:** dtv9vd 
+- **DOI:** pending
+- **License:** pending
 
 
 **Links:**
